@@ -5,6 +5,8 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
+import TeamStores from "./pages/TeamStores";
+
 
 function App() {
   return (
@@ -27,7 +29,7 @@ function App() {
           </div>
 
           {/* Nav Links */}
-          <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
+          <nav className="flex space-x-6 text-gray-700 font-medium">
             <Link to="/" className="hover:text-[#8C1515] transition">
               Home
             </Link>
@@ -40,12 +42,17 @@ function App() {
             <Link to="/products" className="hover:text-[#8C1515] transition">
               Products
             </Link>
+            <Link to="/team-stores" className="hover:text-[#8C1515] transition">
+            Team Stores
+            </Link>
             <Link
               to="/contact"
               className="px-4 py-2 rounded-md bg-[#8C1515] text-white hover:bg-gray-800 transition"
             >
               Contact
             </Link>
+            
+
           </nav>
 
           {/* Contact Info */}
@@ -71,6 +78,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/team-stores" element={<TeamStores />} />
+
         </Routes>
       </main>
     </Router>
