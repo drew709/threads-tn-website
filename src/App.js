@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -7,6 +7,22 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import TeamStores from "./pages/TeamStores";
 
+
+function FloatingQuoteButton() {
+  const location = useLocation();
+
+  // Hide button on Contact page
+  if (location.pathname === "/contact") return null;
+
+  return (
+    <Link
+      to="/contact"
+      className="fixed bottom-6 right-6 z-50 bg-[#8C1515] text-white px-6 py-4 rounded-full shadow-2xl font-semibold text-lg transition-all hover:bg-black hover:scale-105"
+    >
+      Request a Quote
+    </Link>
+  );
+}
 
 function App() {
   return (
@@ -49,7 +65,7 @@ function App() {
               to="/contact"
               className="px-4 py-2 rounded-md bg-[#8C1515] text-white hover:bg-gray-800 transition"
             >
-              Contact
+              Quote
             </Link>
             
 
@@ -82,6 +98,9 @@ function App() {
 
         </Routes>
       </main>
+      {/* Global Floating Request a Quote Button */}
+<FloatingQuoteButton />
+
     </Router>
   );
 }

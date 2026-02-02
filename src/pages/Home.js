@@ -93,36 +93,52 @@ function Home() {
             <h3 className="text-xl font-semibold mb-2">
               Custom Embroidered Shirts
             </h3>
-            <a href="#contact" className="text-[#8C1515] hover:underline font-medium">
-              Request a Quote →
-            </a>
+            
           </div>
 
           <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
             <img
               src="HMV Tshirt.jpg"
-              alt="Screen Printed Tees"
+              alt="Screen Printing"
               className="rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Screen Printed Tees</h3>
-            <a href="#contact" className="text-[#8C1515] hover:underline font-medium">
-              Request a Quote →
-            </a>
+           
           </div>
 
           <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
             <img
-              src="https://images.unsplash.com/photo-1629909613654-28e377c37c53?auto=format&fit=crop&w=800&q=80"
+              src="hats.png"
               alt="Hats & Headwear"
               className="rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Hats & Headwear</h3>
-            <a href="#contact" className="text-[#8C1515] hover:underline font-medium">
-              Request a Quote →
-            </a>
+           
           </div>
         </div>
       </section>
+      {/* Quote CTA */}
+<div className="bg-gray-100 py-16 text-center">
+  <h2
+    className="text-4xl mb-6 text-[#8C1515]"
+    style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
+  >
+    Ready to Get Started?
+  </h2>
+
+  <p className="text-gray-600 mb-8 max-w-xl mx-auto">
+    Tell us what you need and we’ll send you a fast, custom quote for your
+    apparel, embroidery, or screen printing project.
+  </p>
+
+  <a
+    href="/contact"
+    className="inline-block bg-[#8C1515] text-white px-12 py-5 rounded-xl text-lg font-semibold shadow-lg transition-all hover:bg-black hover:scale-105"
+  >
+    Request a Quote
+  </a>
+</div>
+
 
       {/* Reviews Section */}
       <section id="reviews" className="py-20 bg-gray-50 text-center">
