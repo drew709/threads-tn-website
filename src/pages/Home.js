@@ -91,7 +91,7 @@ function Home() {
               className="rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">
-              Custom Embroidered Shirts
+              Embroidery
             </h3>
             
           </div>
@@ -102,7 +102,7 @@ function Home() {
               alt="Screen Printing"
               className="rounded-lg mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Screen Printed Tees</h3>
+            <h3 className="text-xl font-semibold mb-2">Screen Printing</h3>
            
           </div>
 
