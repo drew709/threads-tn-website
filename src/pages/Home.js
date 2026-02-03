@@ -56,17 +56,17 @@ function Home() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="#contact"
+              href="/contact"
               className="bg-white text-[#8C1515] px-6 py-3 rounded-md font-medium hover:bg-gray-200 transition"
             >
               Get a Quote
             </a>
-            <a
+            {/*<a
               href="#services"
               className="border border-white px-6 py-3 rounded-md text-white font-medium hover:bg-white hover:text-[#8C1515] transition"
             >
               See Services
-            </a>
+            </a>*/}
           </div>
         </div>
       </section>
@@ -86,7 +86,7 @@ function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
           <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
             <img
-              src="https://images.unsplash.com/photo-1520975918318-3f3c6fcd4165?auto=format&fit=crop&w=800&q=80"
+              src="embroidery.png"
               alt="Custom Embroidered Shirts"
               className="rounded-lg mb-4"
             />
@@ -98,7 +98,7 @@ function Home() {
 
           <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
             <img
-              src="HMV Tshirt.jpg"
+              src="tullys.jpg"
               alt="Screen Printing"
               className="rounded-lg mb-4"
             />

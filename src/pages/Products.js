@@ -17,6 +17,11 @@ export default function Products() {
       image: "/vendors/momentec.png",
       link: "https://www.momentecbrands.com/",
     },
+    {
+      name: "Richardson",
+      image: "/vendors/richardson.png",
+      link: "https://richardsonsports.com/",
+    },
   ];
 
   return (

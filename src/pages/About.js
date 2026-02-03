@@ -65,8 +65,8 @@ export default function About() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               We stand by our commitment to serve the community through sponorships. 
-              We want to ensure your your season or event is succesfull whether you 
-              need thisrts or not!
+              We want to ensure your season or event is succesfull whether you 
+              need shirts or not!
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
               Please reach out to us if you need sponsors for your event. We will do 
@@ -83,6 +83,20 @@ export default function About() {
               What We Stand For
             </h2>
 
+<div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
+                <p className="font-semibold text-gray-900">Quality you can feel.</p>
+                <p className="text-gray-700 mt-1">
+                  Clean prints, sharp embroidery, and apparel that holds up season after season.
+                </p>
+              </div>
+            
+            <div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
+                <p className="font-semibold text-gray-900">Fast, dependable turnaround.</p>
+                <p className="text-gray-700 mt-1">
+                  Clear timelines, good communication, and deadlines you can trust.
+                </p>
+              </div>
+
             <div className="space-y-5">
               <div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
                 <p className="font-semibold text-gray-900">No budget? We’ll find a way.</p>
@@ -91,20 +105,7 @@ export default function About() {
                   their mission.
                 </p>
               </div>
-
-              <div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
-                <p className="font-semibold text-gray-900">Fast, dependable turnaround.</p>
-                <p className="text-gray-700 mt-1">
-                  Clear timelines, good communication, and deadlines you can trust.
-                </p>
-              </div>
-
-              <div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
-                <p className="font-semibold text-gray-900">Quality you can feel.</p>
-                <p className="text-gray-700 mt-1">
-                  Clean prints, sharp embroidery, and apparel that holds up season after season.
-                </p>
-              </div>
+                        
             </div>
           </div>
         </div>

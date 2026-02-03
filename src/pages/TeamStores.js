@@ -2,18 +2,18 @@ import React from "react";
 
 const teamStores = [
   {
-    name: "Davidson Academy",
-    image: "/teamstores/davidson.jpg",
-    link: "https://example.com/davidson-store",
+    name: "Nick Darnell Merch",
+    image: "/teamstores/Nick.png",
+    link: "https://threads-tn.printavo.com/merch/nicktoontime",
   },
   {
-    name: "Tullahoma Wildcats",
-    image: "/teamstores/TullahomaT.png",
+    name: "Stan McNNabb Company Store",
+    image: "/teamstores/stanmcnabb.png",
     link: "https://threads-tn.printavo.com/merch/stan-mcnabb-automotive-group",
   },
   {
-    name: "Coffee County Raiders",
-    image: "/teamstores/coffee-county.jpg",
+    name: "Tullahoma Cal Ripken Fan Store (Coming Soon)",
+    image: "/teamstores/calripken.jpg",
     link: "https://example.com/coffee-county-store",
   },
 ];
@@ -50,7 +50,7 @@ export default function TeamStores() {
               <img
                 src={team.image}
                 alt={team.name}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
               />
 
               {/* Overlay */}
