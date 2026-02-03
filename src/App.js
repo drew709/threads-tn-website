@@ -7,6 +7,8 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import TeamStores from "./pages/TeamStores";
 import { Facebook, Instagram } from "lucide-react";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 
 
@@ -179,6 +181,7 @@ function Footer() {
 function App() {
   return (
     <Router>
+        <ScrollToTop />
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
   <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
