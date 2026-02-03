@@ -1,7 +1,0 @@
-import React from "react";
-
-function Home() {
-  return <div>Welcome to Threads TN — Custom Apparel and Branding Experts</div>;
-}
-
-export default Home;

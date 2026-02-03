@@ -10,6 +10,7 @@ import { Facebook, Instagram } from "lucide-react";
 
 
 
+
 function FloatingQuoteButton() {
   const location = useLocation();
 
@@ -180,25 +181,36 @@ function App() {
     <Router>
       {/* Navbar */}
       <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-  <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-    {/* Logo + Brand */}
-    <div className="flex items-center gap-3">
+  <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <Link
+      to="/"
+      className="flex items-center gap-2 hover:opacity-90 transition"
+      aria-label="Go to Threads TN homepage"
+    >
       <img src="/Threadsmagnet.jpg" alt="Threads TN Logo" className="h-10 w-auto" />
-      <h1
-        className="text-2xl text-[#8C1515]"
-        style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
-      >
-        THREADS TN
-      </h1>
-    </div>
+      <span
+  className="text-2xl tracking-wide"
+  style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
+>
+        THREADS <span className="text-[#8C1515]">TN</span>
+      </span>
+    </Link>
 
     {/* Desktop Nav */}
     <nav className="hidden md:flex space-x-6 text-gray-700 font-medium items-center">
-      <Link to="/" className="hover:text-[#8C1515] transition">Home</Link>
+      <Link to="/" className="hover:text-[#8C1515] transition">
+        Home
+      </Link>
       {/*<Link to="/services" className="hover:text-[#8C1515] transition">Services</Link>*/}
-      <Link to="/about" className="hover:text-[#8C1515] transition">About</Link>
-      <Link to="/products" className="hover:text-[#8C1515] transition">Products</Link>
-      <Link to="/team-stores" className="hover:text-[#8C1515] transition">Team Stores</Link>
+      <Link to="/about" className="hover:text-[#8C1515] transition">
+        About
+      </Link>
+      <Link to="/products" className="hover:text-[#8C1515] transition">
+        Products
+      </Link>
+      <Link to="/team-stores" className="hover:text-[#8C1515] transition">
+        Team Stores
+      </Link>
       <Link
         to="/contact"
         className="px-4 py-2 rounded-md bg-[#8C1515] text-white hover:bg-gray-800 transition"
@@ -211,6 +223,7 @@ function App() {
     <MobileMenu />
   </div>
 </header>
+
 
 
       {/* Routes */}

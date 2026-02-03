@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 
 function Home() {
+  useEffect(() => {
+  // Load Elfsight script once
+  if (document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) return;
+
+  const script = document.createElement("script");
+  script.src = "https://elfsightcdn.com/platform.js";
+  script.async = true;
+  document.body.appendChild(script);
+}, []);
+
   return (
     <div>
       {/* Hero Section */}
@@ -141,39 +152,36 @@ function Home() {
 
 
       {/* Reviews Section */}
-      <section id="reviews" className="py-20 bg-gray-50 text-center">
-        <h3
-          className="text-4xl mb-6 text-[#8C1515]"
-          style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
-        >
-          What Our Customers Say
-        </h3>
-        <p className="mb-10 text-gray-600">
-          We’re proud to serve Tennessee businesses with quality embroidery and screen printing.
-        </p>
+<section id="reviews" className="py-20 bg-gray-50 text-center">
+  <h3
+    className="text-4xl mb-6 text-[#8C1515]"
+    style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
+  >
+    What Our Customers Say
+  </h3>
+  <p className="mb-10 text-gray-600">
+    Real reviews from our Google Business Profile — updated automatically.
+  </p>
 
-        <div className="flex justify-center mb-10">
-          <iframe
-            title="Threads TN Google Reviews"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.1901535972297!2d-86.21809400000001!3d35.370484999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8861631519789b9d%3A0xe4ce2c2c51156d5b!2sThreads%20TN!5e1!3m2!1sen!2sus!4v1760525553457!5m2!1sen!2sus"
-            width="450"
-            height="337"
-            loading="lazy"
-            allowFullScreen
-            className="rounded-lg shadow-md border border-gray-200"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+  <div className="mx-auto max-w-4xl px-6">
+    <div className="rounded-2xl border border-gray-200 bg-white shadow-sm p-4 sm:p-6">
+      <div
+        className="elfsight-app-7852b421-f557-483d-a93d-027c757f0fa0"
+        data-elfsight-app-lazy
+      ></div>
+    </div>
+  </div>
 
-        <a
-          href="https://www.google.com/search?q=Threads+TN+Reviews"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-[#8C1515] text-white px-6 py-3 rounded-md font-medium transition-all hover:bg-black hover:shadow-lg"
-        >
-          Read More Reviews on Google
-        </a>
-      </section>
+  <a
+    href="https://www.google.com/search?q=Threads+TN+Reviews"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-10 bg-[#8C1515] text-white px-6 py-3 rounded-md font-medium transition-all hover:bg-black hover:shadow-lg"
+  >
+    Read More Reviews on Google
+  </a>
+</section>
+
     </div>
   );
 }
