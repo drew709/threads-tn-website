@@ -65,7 +65,7 @@ export default function About() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               We stand by our commitment to serve the community through sponorships. 
-              We want to ensure your season or event is succesfull whether you 
+              We want to ensure your season or event is successfull whether you 
               need shirts or not!
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">

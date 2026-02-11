@@ -2,6 +2,16 @@ import React from "react";
 
 const teamStores = [
   {
+    name: "TMS Baseball Fan Store",
+    image: "/teamstores/tmsbaseball.png",
+    link: "https://threads-tn.printavo.com/merch/tms-baseball-spirit-wear-2026",
+  },
+  {
+    name: "Tullahoma Cal Ripken Fan Store (Coming Soon)",
+    image: "/teamstores/calripken.jpg",
+    link: "https://example.com/coffee-county-store",
+  },
+  {
     name: "Nick Darnell Merch",
     image: "/teamstores/Nick.png",
     link: "https://threads-tn.printavo.com/merch/nicktoontime",
@@ -11,11 +21,7 @@ const teamStores = [
     image: "/teamstores/stanmcnabb.png",
     link: "https://threads-tn.printavo.com/merch/stan-mcnabb-automotive-group",
   },
-  {
-    name: "Tullahoma Cal Ripken Fan Store (Coming Soon)",
-    image: "/teamstores/calripken.jpg",
-    link: "https://example.com/coffee-county-store",
-  },
+
 ];
 
 export default function TeamStores() {
