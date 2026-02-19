@@ -2,6 +2,11 @@ import React from "react";
 
 const teamStores = [
   {
+    name: "Wildcats AAU Basketball Fan Store",
+    image: "\teamstores\wildcataau.png",
+    link: "https://threads-tn.printavo.com/merch/tullahoma-aau-basketball-online-store",
+  },
+  {
     name: "TMS Baseball Fan Store",
     image: "/teamstores/tmsbaseball.png",
     link: "https://threads-tn.printavo.com/merch/tms-baseball-spirit-wear-2026",
