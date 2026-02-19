@@ -3,7 +3,7 @@ import React from "react";
 const teamStores = [
   {
     name: "Wildcats AAU Basketball Fan Store",
-    image: "\teamstores\wildcataau.png",
+    image: "/teamstores/wildcataau.png",
     link: "https://threads-tn.printavo.com/merch/tullahoma-aau-basketball-online-store",
   },
   {
