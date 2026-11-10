@@ -3,19 +3,24 @@ import React from "react";
 const teamStores = [
   
   {
-    name: "Tullahoma Cal Ripken Fan Store",
-    image: "/teamstores/calripken.jpg",
-    link: "https://threads-tn.printavo.com/merch/tullahoma-cal-ripken-fan-gear-2026",
+    name: "THS Baseball",
+    image: "/teamstores/thsbaseball.png",
+    link: "https://threads-tn.printavo.com/merch/ths-baseball",
   },
   {
-    name: "Nick Darnell Merch",
-    image: "/teamstores/Nick.png",
-    link: "https://threads-tn.printavo.com/merch/nicktoontime",
+    name: "Cooper Christian Academy",
+    image: "/teamstores/cooperchristian.png",
+    link: "https://threads-tn.printavo.com/merch/cooper-christian-academy-spirit-store",
   },
   {
     name: "Stan McNNabb Company Store",
     image: "/teamstores/stanmcnabb.png",
     link: "https://threads-tn.printavo.com/merch/stan-mcnabb-automotive-group",
+  },
+  {
+    name: "THS Softball",
+    image: "/teamstores/thssoftball.png",
+    link: "https://threads-tn.printavo.com/merch/ths-softball-fall-2026-online-store",
   },
 
 ];
@@ -45,7 +50,8 @@ export default function TeamStores() {
             href={team.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+            aria-label={team.name}
+            className="group rounded-xl overflow-hidden shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl ring-1 ring-transparent hover:ring-2 hover:ring-[#8C1515] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8C1515]"
           >
             {/* Image */}
             <div className="relative">
@@ -54,19 +60,6 @@ export default function TeamStores() {
                 alt={team.name}
                 className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
               />
-
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition"></div>
-
-              {/* Text */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h2
-                  className="text-white text-2xl text-center px-4"
-                  style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
-                >
-                  {team.name}
-                </h2>
-              </div>
             </div>
           </a>
         ))}
