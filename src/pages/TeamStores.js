@@ -8,9 +8,9 @@ const teamStores = [
     link: "https://threads-tn.printavo.com/merch/tullahoma-cal-ripken-fan-gear-2026",
   },
   {
-    name: "Nick Darnell Merch",
-    image: "/teamstores/Nick.png",
-    link: "https://threads-tn.printavo.com/merch/nicktoontime",
+    name: "Cooper Christian Academy",
+    image: "/teamstores/cooperchristian.png",
+    link: "https://threads-tn.printavo.com/merch/cooper-christian-academy-spirit-store",
   },
   {
     name: "Stan McNNabb Company Store",
