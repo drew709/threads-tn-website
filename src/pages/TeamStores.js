@@ -51,7 +51,7 @@ export default function TeamStores() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={team.name}
-            className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
+            className="group rounded-xl overflow-hidden shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl ring-1 ring-transparent hover:ring-2 hover:ring-[#8C1515] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8C1515]"
           >
             {/* Image */}
             <div className="relative">
@@ -60,9 +60,6 @@ export default function TeamStores() {
                 alt={team.name}
                 className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
               />
-
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition"></div>
             </div>
           </a>
         ))}
