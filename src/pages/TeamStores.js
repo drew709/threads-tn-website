@@ -3,9 +3,9 @@ import React from "react";
 const teamStores = [
   
   {
-    name: "Tullahoma Cal Ripken Fan Store",
-    image: "/teamstores/calripken.jpg",
-    link: "https://threads-tn.printavo.com/merch/tullahoma-cal-ripken-fan-gear-2026",
+    name: "THS Baseball",
+    image: "/teamstores/thsbaseball.png",
+    link: "https://threads-tn.printavo.com/merch/ths-baseball",
   },
   {
     name: "Cooper Christian Academy",
@@ -16,6 +16,11 @@ const teamStores = [
     name: "Stan McNNabb Company Store",
     image: "/teamstores/stanmcnabb.png",
     link: "https://threads-tn.printavo.com/merch/stan-mcnabb-automotive-group",
+  },
+  {
+    name: "THS Softball",
+    image: "/teamstores/thssoftball.png",
+    link: "https://threads-tn.printavo.com/merch/ths-softball-fall-2026-online-store",
   },
 
 ];
