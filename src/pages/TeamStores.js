@@ -50,6 +50,7 @@ export default function TeamStores() {
             href={team.link}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={team.name}
             className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition"
           >
             {/* Image */}
@@ -62,16 +63,6 @@ export default function TeamStores() {
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition"></div>
-
-              {/* Text */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h2
-                  className="text-white text-2xl text-center px-4"
-                  style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
-                >
-                  {team.name}
-                </h2>
-              </div>
             </div>
           </a>
         ))}
