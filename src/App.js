@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import TeamStores from "./pages/TeamStores";
 import { Facebook, Instagram } from "lucide-react";
 import ScrollToTop from "./components/ScrollToTop";
+import Header from "./components/Header";
 
 
 
@@ -22,75 +23,16 @@ function FloatingQuoteButton() {
   return (
     <Link
       to="/contact"
+      id="floating-quote"
       className="fixed bottom-6 right-6 z-50 bg-[#8C1515] text-white px-6 py-4 rounded-full shadow-2xl font-semibold text-lg transition-all hover:bg-black hover:scale-105"
     >
       Request a Quote
     </Link>
   );
 }
-function MobileMenu() {
-  const [open, setOpen] = useState(false);
-
-  const closeMenu = () => setOpen(false);
-
-  return (
-    <div className="md:hidden relative">
-      {/* Hamburger Button */}
-      <button
-        onClick={() => setOpen(!open)}
-        className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 transition"
-        aria-label="Open menu"
-      >
-        {/* Icon */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-7 w-7"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          {open ? (
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          ) : (
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          )}
-        </svg>
-      </button>
-
-      {/* Dropdown Menu */}
-      {open && (
-        <div className="absolute right-0 mt-3 w-56 rounded-xl bg-white shadow-xl border border-gray-200 overflow-hidden z-50">
-          <Link onClick={closeMenu} to="/" className="block px-5 py-3 hover:bg-gray-50">
-            Home
-          </Link>
-          {/*<Link onClick={closeMenu} to="/services" className="block px-5 py-3 hover:bg-gray-50">
-            Services
-          </Link>*/}
-          <Link onClick={closeMenu} to="/about" className="block px-5 py-3 hover:bg-gray-50">
-            About
-          </Link>
-          <Link onClick={closeMenu} to="/products" className="block px-5 py-3 hover:bg-gray-50">
-            Products
-          </Link>
-          <Link onClick={closeMenu} to="/team-stores" className="block px-5 py-3 hover:bg-gray-50">
-            Team Stores
-          </Link>
-          <Link
-            onClick={closeMenu}
-            to="/contact"
-            className="block px-5 py-3 bg-[#8C1515] text-white hover:bg-black transition"
-          >
-            Quote
-          </Link>
-        </div>
-      )}
-    </div>
-  );
-}
 function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200 mt-16">
+    <footer id="site-footer" className="bg-white border-t border-gray-200 mt-16">
       <div className="max-w-7xl mx-auto px-6 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Brand */}
@@ -182,55 +124,10 @@ function App() {
   return (
     <Router>
         <ScrollToTop />
-      {/* Navbar */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-  <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <Link
-      to="/"
-      className="flex items-center gap-2 hover:opacity-90 transition"
-      aria-label="Go to Threads TN homepage"
-    >
-      <img src="/Threadsmagnet.jpg" alt="Threads TN Logo" className="h-10 w-auto" />
-      <span
-  className="text-2xl tracking-wide"
-  style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
->
-        THREADS <span className="text-[#8C1515]">TN</span>
-      </span>
-    </Link>
-
-    {/* Desktop Nav */}
-    <nav className="hidden md:flex space-x-6 text-gray-700 font-medium items-center">
-      <Link to="/" className="hover:text-[#8C1515] transition">
-        Home
-      </Link>
-      {/*<Link to="/services" className="hover:text-[#8C1515] transition">Services</Link>*/}
-      <Link to="/about" className="hover:text-[#8C1515] transition">
-        About
-      </Link>
-      <Link to="/products" className="hover:text-[#8C1515] transition">
-        Products
-      </Link>
-      <Link to="/team-stores" className="hover:text-[#8C1515] transition">
-        Team Stores
-      </Link>
-      <Link
-        to="/contact"
-        className="px-4 py-2 rounded-md bg-[#8C1515] text-white hover:bg-gray-800 transition"
-      >
-        Quote
-      </Link>
-    </nav>
-
-    {/* Mobile Menu Button */}
-    <MobileMenu />
-  </div>
-</header>
-
-
+      <Header />
 
       {/* Routes */}
-      <main className="pt-24 bg-gray-100 min-h-screen">
+      <main id="main-content" tabIndex={-1} className="pt-20 bg-gray-100 min-h-screen outline-none">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
