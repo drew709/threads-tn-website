@@ -1,6 +1,6 @@
 import React from "react";
 
-const teamStores = [
+export const teamStores = [
   
   {
     name: "THS Baseball",
