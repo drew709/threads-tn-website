@@ -56,12 +56,22 @@ export default function Header() {
     const bar = barRef.current;
     if (!bar) return undefined;
 
-    const measure = () => setBarHeight(bar.offsetHeight);
-    measure();
+    let frame = 0;
+    const measure = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const next = bar.offsetHeight;
+        setBarHeight((current) => (current === next ? current : next));
+      });
+    };
 
+    measure();
     const observer = new ResizeObserver(measure);
     observer.observe(bar);
-    return () => observer.disconnect();
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
   }, []);
 
   useEffect(() => {
@@ -209,7 +219,7 @@ export default function Header() {
                 width={884}
                 height={280}
                 decoding="async"
-                fetchPriority="high"
+                fetchpriority="high"
                 className={`w-auto transition-[height] duration-200 motion-reduce:transition-none ${
                   scrolled ? "h-8 sm:h-9 lg:h-10" : "h-9 sm:h-11 lg:h-12"
                 }`}
