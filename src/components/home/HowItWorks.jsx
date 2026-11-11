@@ -1,4 +1,19 @@
-import { SectionHeading, NeedsConfirm, PrimaryLink, displayFont } from "./ui";
+import { SectionHeading, PrimaryLink, displayFont } from "./ui";
+
+/*
+  Owner-only. Do not render this list. Drew still needs to confirm it
+  before any of it is published:
+
+  - Proofs. Whether a proof is always sent before production, and whether it is free.
+  - Turnaround. A typical timeline, and whether rush orders are possible.
+  - Shipping and delivery. Options beyond 106 W. Ogee Street, including whether pickup is the usual way to get an order.
+  - Replies. How soon a quote request gets an answer.
+  - Hours. When the shop is open.
+  - Walk-ins. Whether someone can stop by without an appointment.
+
+  Also not published, because they are not in the repo: years in business,
+  order counts, schools served, minimums, a city-by-city service area, and ZIP.
+*/
 
 const steps = [
   {
@@ -37,7 +52,7 @@ export default function HowItWorks() {
           titleId="process-heading"
         >
           A plain path for a booster, a coach, or a business ordering for the
-          first time. Where the shop hasn’t published a number, it stays blank.
+          first time.
         </SectionHeading>
 
         <ol className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -64,51 +79,6 @@ export default function HowItWorks() {
 
         <div className="mt-8">
           <PrimaryLink to="/contact">Get a Quote</PrimaryLink>
-        </div>
-
-        <div
-          id="not-posted-yet"
-          className="mt-10 rounded-3xl border border-dashed border-[#8C1515]/45 bg-white/70 p-5 sm:p-6"
-        >
-          <p>
-            <span className="inline-block rounded bg-[#8C1515] px-2 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-white">
-              Not posted yet
-            </span>
-          </p>
-          <h3 className="mt-3 text-xl text-[#1C1412]" style={displayFont}>
-            Details the shop still needs to confirm
-          </h3>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[#4A433E]">
-            Left blank on purpose. These are not estimates, and they are not
-            promises.
-          </p>
-          <ul className="mt-4 list-disc space-y-2 pl-5">
-            <NeedsConfirm>
-              <span className="font-semibold">Proofs.</span> Whether a proof is
-              always sent before we produce, and whether that proof is free.
-            </NeedsConfirm>
-            <NeedsConfirm>
-              <span className="font-semibold">Turnaround.</span> A typical
-              timeline, and whether rush orders are possible.
-            </NeedsConfirm>
-            <NeedsConfirm>
-              <span className="font-semibold">Shipping and delivery.</span>{" "}
-              Options beyond the shop at 106 W. Ogee Street, including whether
-              pickup is the usual way to get an order.
-            </NeedsConfirm>
-            <NeedsConfirm>
-              <span className="font-semibold">Replies.</span> How soon a quote
-              request gets an answer.
-            </NeedsConfirm>
-            <NeedsConfirm>
-              <span className="font-semibold">Hours.</span> When the shop is
-              open.
-            </NeedsConfirm>
-            <NeedsConfirm>
-              <span className="font-semibold">Walk-ins.</span> Whether you can
-              stop by without an appointment.
-            </NeedsConfirm>
-          </ul>
         </div>
       </div>
     </section>

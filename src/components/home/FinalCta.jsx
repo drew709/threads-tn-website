@@ -66,13 +66,6 @@ export default function FinalCta() {
             </li>
           </ul>
 
-          <p className="mt-4 text-sm leading-relaxed text-[#5c3a3a]">
-            <a href="#not-posted-yet" className="font-semibold underline decoration-[#8C1515]/40 underline-offset-4 hover:decoration-[#8C1515]">
-              Hours, walk-ins, turnaround, and shipping
-            </a>{" "}
-            are marked “Not posted yet” above. They are not filled in with a guess.
-          </p>
-
           <div className="mt-5 flex items-center gap-3">
             <a
               href={SHOP.facebook}

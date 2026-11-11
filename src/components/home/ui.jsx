@@ -101,12 +101,6 @@ export function SectionHeading({ eyebrow, title, titleId, children }) {
   );
 }
 
-export function NeedsConfirm({ children }) {
-  return (
-    <li className="text-sm leading-relaxed text-[#3F3832]">{children}</li>
-  );
-}
-
 export function TextLink({ to, children, className = "" }) {
   return (
     <Link
