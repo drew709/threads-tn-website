@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import Seo from "../components/Seo";
+import { pageSeo } from "../seo/pages";
 
 
 function Home() {
@@ -14,6 +16,7 @@ function Home() {
 
   return (
     <div>
+      <Seo {...pageSeo.home} />
       {/* Hero Section */}
       <section
         id="hero"
@@ -97,8 +100,10 @@ function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
           <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
             <img
-              src="embroidery.png"
-              alt="Custom Embroidered Shirts"
+              src="/embroidery.png"
+              alt="Embroidered Tullahoma Wildcats towel, blue polo, and black vest by Threads TN"
+              loading="lazy"
+              decoding="async"
               className="rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">
@@ -109,8 +114,10 @@ function Home() {
 
           <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
             <img
-              src="tullys.jpg"
-              alt="Screen Printing"
+              src="/tullys.jpg"
+              alt="Screen-printed Tully's Coffee Co. t-shirts"
+              loading="lazy"
+              decoding="async"
               className="rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Screen Printing</h3>
@@ -119,8 +126,10 @@ function Home() {
 
           <div className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg transition">
             <img
-              src="hats.png"
-              alt="Hats & Headwear"
+              src="/hats.jpg"
+              alt="Custom trucker hats, including a white Wildcats cap and a tan cap with a T logo"
+              loading="lazy"
+              decoding="async"
               className="rounded-lg mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">Hats & Headwear</h3>
@@ -153,12 +162,12 @@ function Home() {
 
       {/* Reviews Section */}
 <section id="reviews" className="py-20 bg-gray-50 text-center">
-  <h3
+  <h2
     className="text-4xl mb-6 text-[#8C1515]"
     style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
   >
     What Our Customers Say
-  </h3>
+  </h2>
   <p className="mb-10 text-gray-600">
     Real reviews from our Google Business Profile — updated automatically.
   </p>

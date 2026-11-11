@@ -1,8 +1,11 @@
 import React from "react";
+import Seo from "../components/Seo";
+import { pageSeo } from "../seo/pages";
 
 export default function Services() {
   return (
     <div className="text-center py-20">
+      <Seo {...pageSeo.services} />
       <h1 className="text-5xl font-bold text-[#8C1515]">
         No limits to your brand!
       </h1>

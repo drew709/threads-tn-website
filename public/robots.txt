@@ -1,0 +1,5 @@
+# Threads TN — https://www.threadstn.com
+User-agent: *
+Allow: /
+
+Sitemap: https://www.threadstn.com/sitemap.xml

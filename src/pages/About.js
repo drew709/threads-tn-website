@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Seo from "../components/Seo";
+import { pageSeo } from "../seo/pages";
 
 export default function About() {
   return (
     <div className="bg-gray-100">
+      <Seo {...pageSeo.about} />
       <div className="max-w-6xl mx-auto px-6 py-20">
         {/* Header */}
         <div className="text-center mb-14">
@@ -46,7 +49,9 @@ export default function About() {
   <div className="bg-white rounded-2xl shadow-md p-4">
     <img
       src="/about/family.jpg"
-      alt="Threads TN Family"
+      alt="The three families who own Threads TN, a Tullahoma apparel shop"
+      loading="lazy"
+      decoding="async"
       className="rounded-xl object-cover w-full h-[350px]"
     />
     <p className="text-sm text-gray-600 text-center mt-3">
@@ -84,14 +89,14 @@ export default function About() {
             </h2>
 
 <div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
-                <p className="font-semibold text-gray-900">Quality you can feel.</p>
+                <h3 className="font-semibold text-gray-900">Quality you can feel.</h3>
                 <p className="text-gray-700 mt-1">
                   Clean prints, sharp embroidery, and apparel that holds up season after season.
                 </p>
               </div>
             
             <div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
-                <p className="font-semibold text-gray-900">Fast, dependable turnaround.</p>
+                <h3 className="font-semibold text-gray-900">Fast, dependable turnaround.</h3>
                 <p className="text-gray-700 mt-1">
                   Clear timelines, good communication, and deadlines you can trust.
                 </p>
@@ -99,7 +104,7 @@ export default function About() {
 
             <div className="space-y-5">
               <div className="border border-gray-200 rounded-xl p-5 bg-gray-50">
-                <p className="font-semibold text-gray-900">No budget? We’ll find a way.</p>
+                <h3 className="font-semibold text-gray-900">No budget? We’ll find a way.</h3>
                 <p className="text-gray-700 mt-1">
                   We help schools and clubs get quality apparel without compromising
                   their mission.
@@ -121,19 +126,19 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <p className="font-semibold text-gray-900 mb-2">Schools & Teams</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Schools & Teams</h3>
               <p className="text-gray-700">
                 Spirit wear, uniforms, boosters, coaches gear, clubs, and team stores.
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <p className="font-semibold text-gray-900 mb-2">Local Businesses</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Local Businesses</h3>
               <p className="text-gray-700">
                 Branded polos, hats, workwear, and event shirts that represent your brand.
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-              <p className="font-semibold text-gray-900 mb-2">Events</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Events</h3>
               <p className="text-gray-700">
                 Runs, fundraisers, tournaments, and community events — done right and on time.
               </p>
@@ -144,12 +149,12 @@ export default function About() {
         {/* CTA */}
         <div className="mt-14 text-center">
           <div className="inline-block bg-[#8C1515] text-white rounded-2xl px-10 py-10 shadow-xl">
-            <h3
+            <h2
               className="text-3xl mb-3"
               style={{ fontFamily: '"Freshman", sans-serif', fontWeight: 400 }}
             >
               Ready to bring your vision to life?
-            </h3>
+            </h2>
             <p className="text-gray-100 mb-6 max-w-2xl mx-auto">
               Send us your idea — we’ll help you choose the right apparel, decoration method,
               and timeline to get it done.
