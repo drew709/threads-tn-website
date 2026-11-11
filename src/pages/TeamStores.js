@@ -2,7 +2,7 @@ import React from "react";
 import Seo from "../components/Seo";
 import { pageSeo } from "../seo/pages";
 
-const teamStores = [
+export const teamStores = [
   
   {
     name: "THS Baseball",
