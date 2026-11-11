@@ -1,16 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Threads TN</title>
-    <link href="https://fonts.cdnfonts.com/css/freshman" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8C1515" />
+    <meta name="application-name" content="Threads TN" />
+    <meta name="apple-mobile-web-app-title" content="Threads TN" />
+    <meta name="geo.region" content="US-TN" />
+    <meta name="geo.placename" content="Tullahoma" />
+    <!--
+      data-seo-fallback tags describe the homepage for clients that do not run
+      JavaScript. Create React App serves this file for every route, and
+      react-helmet-async replaces these tags after hydration. Owner TODOs
+      for missing business facts live in src/seo/site.js.
+    -->
+    <title>Threads TN | Screen Printing &amp; Embroidery in Tullahoma</title>
+    <meta
+      name="description"
+      data-seo-fallback="true"
+      content="Custom embroidery, screen printing, and branded apparel for teams, schools, events, and businesses across Tennessee. Locally owned in Tullahoma."
+    />
+    <meta name="robots" content="index, follow" data-seo-fallback="true" />
+    <link rel="canonical" href="https://www.threadstn.com/" data-seo-fallback="true" />
+    <meta property="og:site_name" content="Threads TN" data-seo-fallback="true" />
+    <meta property="og:type" content="website" data-seo-fallback="true" />
+    <meta property="og:locale" content="en_US" data-seo-fallback="true" />
+    <meta
+      property="og:title"
+      content="Threads TN | Screen Printing &amp; Embroidery in Tullahoma"
+      data-seo-fallback="true"
+    />
+    <meta
+      property="og:description"
+      content="Custom embroidery, screen printing, and branded apparel for teams, schools, events, and businesses across Tennessee. Locally owned in Tullahoma."
+      data-seo-fallback="true"
+    />
+    <meta property="og:url" content="https://www.threadstn.com/" data-seo-fallback="true" />
+    <meta property="og:image" content="https://www.threadstn.com/og-image.jpg" data-seo-fallback="true" />
+    <meta property="og:image:type" content="image/jpeg" data-seo-fallback="true" />
+    <meta property="og:image:width" content="1200" data-seo-fallback="true" />
+    <meta property="og:image:height" content="630" data-seo-fallback="true" />
+    <meta
+      property="og:image:alt"
+      content="Threads TN logo for screen printing and embroidery in Tullahoma, Tennessee"
+      data-seo-fallback="true"
+    />
+    <meta name="twitter:card" content="summary_large_image" data-seo-fallback="true" />
+    <meta
+      name="twitter:title"
+      content="Threads TN | Screen Printing &amp; Embroidery in Tullahoma"
+      data-seo-fallback="true"
+    />
+    <meta
+      name="twitter:description"
+      content="Custom embroidery, screen printing, and branded apparel for teams, schools, events, and businesses across Tennessee. Locally owned in Tullahoma."
+      data-seo-fallback="true"
+    />
+    <meta name="twitter:image" content="https://www.threadstn.com/og-image.jpg" data-seo-fallback="true" />
+    <meta
+      name="twitter:image:alt"
+      content="Threads TN logo for screen printing and embroidery in Tullahoma, Tennessee"
+      data-seo-fallback="true"
+    />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="%PUBLIC_URL%/sitemap.xml" />
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://elfsightcdn.com" />
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/freshman" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script type="application/ld+json" data-seo-fallback="true">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ClothingStore",
+            "@id": "https://www.threadstn.com/#business",
+            "name": "Threads TN",
+            "slogan": "Custom Apparel That Represents Your Brand",
+            "description": "Custom embroidery, screen printing, and branded apparel for teams, schools, events, and businesses across Tennessee.",
+            "url": "https://www.threadstn.com/",
+            "image": "https://www.threadstn.com/og-image.jpg",
+            "logo": "https://www.threadstn.com/Threadsmagnet.jpg",
+            "email": "orders@threadstn.com",
+            "telephone": "+1-931-455-0079",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "106 W. Ogee Street",
+              "addressLocality": "Tullahoma",
+              "addressRegion": "TN",
+              "postalCode": "37388",
+              "addressCountry": "US"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "16:30"
+              }
+            ],
+            "areaServed": {
+              "@type": "State",
+              "name": "Tennessee"
+            },
+            "sameAs": [
+              "https://www.facebook.com/ThreadsTN",
+              "https://www.instagram.com/threads_tn",
+              "https://share.google/IQrgBbCaqancN12b7"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.threadstn.com/#website",
+            "url": "https://www.threadstn.com/",
+            "name": "Threads TN",
+            "description": "Custom embroidery, screen printing, and branded apparel for teams, schools, events, and businesses across Tennessee.",
+            "publisher": { "@id": "https://www.threadstn.com/#business" },
+            "inLanguage": "en-US"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
+    <noscript>
+      <p>
+        Threads TN is a custom screen printing and embroidery shop at 106 W. Ogee Street,
+        Tullahoma, TN. Call (931) 455-0079 or email orders@threadstn.com.
+      </p>
+    </noscript>
     <div id="root"></div>
   </body>
 </html>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-/>

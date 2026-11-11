@@ -1,4 +1,6 @@
 import React from "react";
+import Seo from "../components/Seo";
+import { pageSeo } from "../seo/pages";
 
 export const teamStores = [
   
@@ -28,6 +30,7 @@ export const teamStores = [
 export default function TeamStores() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
+      <Seo {...pageSeo.teamStores} />
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1

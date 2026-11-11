@@ -1,4 +1,6 @@
 import React from "react";
+import Seo from "../components/Seo";
+import { pageSeo } from "../seo/pages";
 
 export default function Products() {
   const vendors = [
@@ -26,6 +28,7 @@ export default function Products() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-20">
+      <Seo {...pageSeo.products} />
       {/* Header */}
       <div className="text-center mb-12">
         <h1
@@ -53,7 +56,9 @@ export default function Products() {
             {/* Logo */}
             <img
               src={vendor.image}
-              alt={`${vendor.name} Logo`}
+              alt={`${vendor.name} apparel supplier logo`}
+              loading="lazy"
+              decoding="async"
               className="h-32 object-contain mb-6 group-hover:scale-105 transition-transform"
             />
 

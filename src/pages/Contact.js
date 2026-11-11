@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Seo from "../components/Seo";
+import { pageSeo } from "../seo/pages";
 
 export default function Contact() {
   const FORM_ENDPOINT = "https://formspree.io/f/mgozrven";
@@ -46,6 +48,7 @@ export default function Contact() {
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-20">
+      <Seo {...pageSeo.contact} />
       <div className="text-center mb-12">
         <h1
           className="text-5xl mb-4 text-[#8C1515]"

@@ -1,3 +1,5 @@
+import Seo from "../components/Seo";
+import { pageSeo } from "../seo/pages";
 import Hero from "../components/home/Hero";
 import TrustBar from "../components/home/TrustBar";
 import Audiences from "../components/home/Audiences";
@@ -13,7 +15,7 @@ import "../components/home/home.css";
 export default function Home() {
   return (
     <div className="-mt-8 bg-[#F4EFE8] text-[#1C1412]">
-      {/* Route titles and meta are added by the SEO branch as the first child: <Seo {...pageSeo.home} />. Do not add a second head manager here. */}
+      <Seo {...pageSeo.home} />
       <Hero />
       <TrustBar />
       <Audiences />
