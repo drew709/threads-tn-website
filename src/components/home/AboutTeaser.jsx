@@ -20,10 +20,6 @@ export default function AboutTeaser() {
             decoding="async"
             className="h-[320px] w-full object-cover object-top sm:h-[420px]"
           />
-          <figcaption className="px-5 py-4 text-center text-sm text-[#5c534c]">
-            Three families, one mission — serving our community through custom
-            apparel.
-          </figcaption>
         </figure>
 
         <div>
@@ -35,11 +31,10 @@ export default function AboutTeaser() {
             className="mt-3 text-balance text-3xl leading-tight text-[#1C1412] sm:text-4xl"
             style={displayFont}
           >
-            Built by teachers, coaches, and former educators.
+            A family shop in Tullahoma.
           </h2>
           <p className="mt-4 text-pretty text-base leading-relaxed text-[#4A433E] sm:text-lg">
-            We’re a family-rooted shop in Tullahoma. We know what schools and
-            teams need — and what they don’t have time for.
+            Built by teachers, coaches, and former educators.
           </p>
           <Link
             to="/about"

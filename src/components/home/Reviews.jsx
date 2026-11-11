@@ -25,8 +25,7 @@ export default function Reviews() {
           title="Google reviews"
           titleId="reviews-heading"
         >
-          Real Google reviews for the Tullahoma shop, not quotes we wrote
-          ourselves.
+          From the Tullahoma shop’s Google profile.
         </SectionHeading>
 
         <div className="mx-auto mt-10 max-w-4xl rounded-3xl border border-[#1C1412]/10 bg-white p-4 shadow-sm sm:p-6">

@@ -10,20 +10,15 @@ export default function FinalCta() {
     >
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:py-20">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/55">
-            Start an order
-          </p>
           <h2
             id="final-heading"
-            className="mt-3 max-w-xl text-balance text-3xl leading-tight sm:text-4xl"
+            className="max-w-xl text-balance text-3xl leading-tight sm:text-4xl"
             style={displayFont}
           >
-            Send the idea. We’ll help you make the call on apparel, decoration,
-            and timing.
+            Reach the shop.
           </h2>
           <p className="mt-4 max-w-xl text-pretty text-base leading-relaxed text-white/75 sm:text-lg">
-            Call the shop or send a quote request. We’ll follow up with pricing
-            and production details.
+            Call, or send the idea for a quote.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <PrimaryLink to="/contact" tone="ink">

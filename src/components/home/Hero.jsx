@@ -1,10 +1,5 @@
 import { SHOP, displayFont, PrimaryLink, SecondaryLink } from "./ui";
 
-const chips = [
-  "Locally owned in Tullahoma",
-  `${SHOP.street}`,
-];
-
 export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-[#F4EFE8]">
@@ -29,10 +24,8 @@ export default function Hero() {
             Custom apparel for Tullahoma teams, schools, and businesses.
           </h1>
           <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-[#4A433E] sm:text-lg">
-            Locally owned on Ogee Street in Tullahoma. Embroidery, screen
-            printing, and online team stores for schools, sports teams,
-            businesses, and organizations — with the details handled, so you
-            can focus on your students, your team, and your community.
+            Locally owned screen printing, embroidery, and branded apparel on
+            Ogee Street.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -49,16 +42,6 @@ export default function Hero() {
             </a>
           </p>
 
-          <ul className="mt-8 flex flex-wrap gap-2">
-            {chips.map((chip) => (
-              <li
-                key={chip}
-                className="rounded-full border border-[#1C1412]/10 bg-white/80 px-3 py-1.5 text-sm text-[#3F3832]"
-              >
-                {chip}
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div className="home-rise-late grid items-stretch gap-3 sm:grid-cols-[1.35fr_0.8fr]">
@@ -66,8 +49,8 @@ export default function Hero() {
             <img
               src="/tullys.jpg"
               alt="Two folded terracotta Comfort Colors t-shirts with a Tully’s Coffee Co. screen print, on a wood floor."
-              width="2048"
-              height="1608"
+              width="1400"
+              height="1099"
               fetchPriority="high"
               decoding="async"
               className="aspect-[5/4] h-full w-full object-cover"
