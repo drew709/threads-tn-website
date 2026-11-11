@@ -8,15 +8,7 @@ import { pageSeo } from "./pages";
 import { BUSINESS, buildJsonLd, robotsForHost } from "./site";
 
 const ROOT = path.join(__dirname, "../..");
-const FORBIDDEN = [
-  "openingHours",
-  "openingHoursSpecification",
-  "aggregateRating",
-  "review",
-  "postalCode",
-  "priceRange",
-  "37388",
-];
+const FORBIDDEN = ["aggregateRating", "review", "latitude", "longitude", "priceRange"];
 
 function renderSeo(page) {
   globalThis.IS_REACT_ACT_ENVIRONMENT = true;
@@ -84,9 +76,19 @@ test("each route has unique title, description, and canonical", () => {
     expect(business.telephone).toBe(BUSINESS.telephone);
     expect(business.address.streetAddress).toBe("106 W. Ogee Street");
     expect(business.address.addressLocality).toBe("Tullahoma");
+    expect(business.address.postalCode).toBe("37388");
+    expect(business.openingHoursSpecification).toEqual([
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "16:30",
+      },
+    ]);
     expect(business.sameAs).toEqual([
       "https://www.facebook.com/ThreadsTN",
       "https://www.instagram.com/threads_tn",
+      "https://share.google/IQrgBbCaqancN12b7",
     ]);
 
     const serialized = JSON.stringify(data);
@@ -125,6 +127,10 @@ test("static fallback, robots, and sitemap match the route table", () => {
   expect(html).toContain('rel="canonical"');
   expect(html).toContain(BUSINESS.telephone);
   expect(html).toContain(BUSINESS.streetAddress);
+  expect(html).toContain("37388");
+  expect(html).toContain("https://share.google/IQrgBbCaqancN12b7");
+  expect(html).toContain('"opens": "09:00"');
+  expect(html).toContain('"closes": "16:30"');
 
   FORBIDDEN.forEach((token) => {
     expect(html).not.toContain(token);
