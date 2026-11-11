@@ -24,6 +24,12 @@ const teamStores = [
     image: "/teamstores/thssoftball.png",
     link: "https://threads-tn.printavo.com/merch/ths-softball-fall-2026-online-store",
   },
+  {
+    name: "SCHS Baseball",
+    image: "/teamstores/schsbaseball.png",
+    link: "https://threads-tn.printavo.com/merch/schs-baseball",
+    alt: "SCHS Baseball team store",
+  },
 
 ];
 
@@ -60,7 +66,7 @@ export default function TeamStores() {
             <div className="relative">
               <img
                 src={team.image}
-                alt={team.name}
+                alt={team.alt || team.name}
                 className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
